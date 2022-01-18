@@ -9,8 +9,7 @@ class DataTestCases(unittest.TestCase):
                          'Aggies Rule',
                          'Aggies Forever',
                          'Aggies Always',
-                         'Aggies Are The Best']
-                         'Aggies Always',
+                         'Aggies Are The Best',
                          'Aggies #1']
 
         data = read_data('sample_data.txt')
