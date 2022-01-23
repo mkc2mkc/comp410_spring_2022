@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="0.095" timestamp="2022-01-17T17:07:56.833922" hostname="WinDev2112Eval"><testcase classname="test_pii_data.DataTestCases" name="test_read_data" file="test_pii_data.py" line="5" time="0.015"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase></testsuite></testsuites>
