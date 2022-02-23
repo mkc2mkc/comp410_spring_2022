@@ -37,6 +37,7 @@ class DataTestCases(unittest.TestCase):
 
     def test_has_us_phone(self):
         # Test a valid US phone number
+        # Add a comment using vscode 
         test_data = Pii('My phone number is 970-555-1212')
         self.assertTrue(test_data.has_us_phone())
 
