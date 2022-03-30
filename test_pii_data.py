@@ -168,6 +168,13 @@ class DataTestCases(unittest.TestCase):
         test_data = Pii('johndoe@')
         self.assertEqual(test_data.has_at_handle(), False)
 
+    def test_has_at_handle_anonymize(self):
+        # test string
+        # @john_doe is one of my handles.  I also use @jon_doe but don't match my email jon@gmail.com or at @
+        # expected results
+        # [at handle] is one of my handles.  I also use[at handle] but don't match my email jon@gmail.com or at @
+        self.assertTrue(True)
+
     def test_has_ssn(self):
         test_data = Pii('123-45-6789')
         self.assertTrue(test_data.has_ssn())
