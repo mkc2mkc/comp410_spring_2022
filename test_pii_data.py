@@ -173,6 +173,7 @@ class DataTestCases(unittest.TestCase):
         # @john_doe is one of my handles.  I also use @jon_doe but don't match my email jon@gmail.com or at @
         # expected results
         # [at handle] is one of my handles.  I also use[at handle] but don't match my email jon@gmail.com or at @
+        print('this is from github')
         self.assertTrue(True)
 
     def test_has_ssn(self):
