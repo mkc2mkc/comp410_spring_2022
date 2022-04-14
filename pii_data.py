@@ -23,10 +23,12 @@ class Pii(str):
             # a us phone number was present or not.
             return bool(count2 + count1)
 
-    def has_email(self):
+    def has_email(self, anonymize=False):
         # Match a user's email
-        validemail = re.search(r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$', self)
-        if validemail:
+        validemail = re.sub(r'[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+', '[email]', self)
+        if anonymize:
+            return validemail
+        if '[email]' in validemail:
             return True
         return False
 
